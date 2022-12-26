@@ -25,8 +25,7 @@ class PlotsClass():
         self.leaders = party_leaders
         self.height = 7
         self.width = 2*self.height
-        self.colors_palette = 'tab10' #'Blues_r'
-        #self.colors_palette = list(mcolors.TABLEAU_COLORS.values())
+        self.colors_palette = 'tab10'
         self.title_ft = 16
          
         
@@ -64,45 +63,7 @@ class PlotsClass():
         if save:
             plt.savefig('pics/tweets_elections.png', format='png', dpi=300)
         plt.show()
-    '''
-    def plot_tweet_chrono(self, df: pd.DataFrame, title_pre: str = "Distribution of Tweets during the Election Campaign", title_post: str = "Distribution of Tweets after the Election Campaign",save:bool=True):
-        """
-        Plots chronological distribution of tweets for the two months before and after the election date.
-        """
-        ## initialize parameters
-        h = self.height     # height
-        w = self.width      # width
-        sns.set_theme(context= 'paper',
-                      style='white',
-                      #palette=sns.color_palette("hls", len(self.leaders))
-                      palette= self.colors_palette
-                    )
 
-        #fig = plt.figure(figsize=(w,h),dpi=300)
-        fig, axes=plt.subplots(2, 1, figsize=(w, h), sharey = True)
-
-        tmp1, tmp2 = self.subselect_and_sort_df(df,["Date", "Leader Name"],sort_by=["Date", "Leader Name"], full=False)
-        daterange1,idx1 = self.get_daterange_and_idx(tmp1)
-        daterange2,idx2 = self.get_daterange_and_idx(tmp2)
-        
-        tmps = [tmp1, tmp2]
-        idxs = [idx1, idx2]
-        dateranges = [daterange1, daterange2]
-        titles = [title_pre, title_post]
-
-        for i in range(len(tmps)):
-            p = sns.histplot(data=tmps[i], x="Date", hue = "Leader Name", multiple="stack", ax=axes[i], palette=self.colors_palette)
-            axes[i].set_title(titles[i], fontsize=self.title_ft)
-            axes[i].set_xticks(ticks = range(0, len(dateranges[i]), idxs[i]))
-            axes[i].set_xlabel("Date")
-            axes[i].set_ylabel("Total Tweets")
-
-        #############################################################
-        fig.tight_layout()
-        if save:
-            plt.savefig('pics/tweets_pre_post.png', format='png', dpi=300)
-        plt.show()
-    '''
     def plot_followers_count(self, df: pd.DataFrame, save:bool=False):
         '''
         Plot number of followers for each leader.
