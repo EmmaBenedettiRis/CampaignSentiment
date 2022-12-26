@@ -1,13 +1,13 @@
 # Computational Social Science Final Project
 ## Sentiment analysis of Italian political candidates during the 2022 election campaign
-This repository contains the code used in the Final Project of the Computational Social Science exam, held at the University of Trento (A.Y. 2021-2022). A complete description of the project can be found on the attached [report](https://github.com/EmmaBenedetti/CampaignSentiment).
+This repository contains the code used in the Final Project of the Computational Social Science exam, held at the University of Trento (A.Y. 2021-2022). A complete description of the project can be found on the attached [report](https://github.com/EmmaBenedetti/CampaignSentiment/blob/main/Benedetti_CSS_Report.pdf).
 ## Abstract
 This research analyses the Twitter posts of the political candidates of the 2022 Italian election campaign. The goal is to detect the tone of voice used by the candidates, in order to understand the general sentiment behind the text posts, as well as checking for the presence of multiple topics among these posts. To do so, we first collected a total of 2.829 tweets among six political leaders in the span of two months. Then, we retrieved the more relevant text information through the Term Frequency-Inverse Document Frequency (TF-IDF) method. Finally, we analysed the most-recurring keywords through the topic-modelling, Latent Dirichlet Analysis model.
 ## Prerequisites
 In order to run this project, we suggest the following requirements: <br>
 * Use Python>=[3.8](https://www.python.org/downloads/release/python-380/) <br>
-* A [Twitter Developer] (https://developer.twitter.com/en/docs/platform-overview) account, as well as an [active app] (https://developer.twitter.com/en/portal/projects-and-apps) <br>
-* Save the folder [nltk_data] (./nltk_data) in the `share` folder of your virtual environment. 
+* A [Twitter Developer](https://developer.twitter.com/en/docs/platform-overview) account, as well as an [active app](https://developer.twitter.com/en/portal/projects-and-apps) <br>
+* Save the folder [nltk_data](./nltk_data) in the `share` folder of your virtual environment. 
 ## Installation
 ### Clone the Repository
 Clone this repository by typing the following link in a CLI of your choice:
@@ -64,7 +64,7 @@ The repository is composed by: <br>
 * `src/text_mining_class.py`: class used for text vectorization and topic modelling <br>
 * `src/plots_class.py`: class used for plot and graph drawing <br>
 ### Overall repository structure:
-´´´
+```bash
 ├── 2022_post_elections
 │   ├── Carlo Calenda.csv
 │   ├── Enrico Letta.csv
@@ -115,4 +115,4 @@ The repository is composed by: <br>
     ├── plots_class.py
     ├── text_mining_class.py
     └── tweet_classes.py
-´´´
+```
