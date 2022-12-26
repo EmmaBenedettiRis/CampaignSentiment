@@ -64,7 +64,7 @@ The repository is composed by: <br>
 * `src/text_mining_class.py`: class used for text vectorization and topic modelling <br>
 * `src/plots_class.py`: class used for plot and graph drawing <br>
 ### Overall repository structure:
-´´´bash
+´´´
 ├── 2022_post_elections
 │   ├── Carlo Calenda.csv
 │   ├── Enrico Letta.csv
