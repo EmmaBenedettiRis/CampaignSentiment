@@ -55,7 +55,7 @@ The repository is composed by: <br>
 * `2022_pre_elections`: folder containing the tweets of political leaders during the two months of election campaign <br>
 * `2022_post_elections`: folder containing the tweets of political leaders in the two months following the election date: not used in this project, but added for future modifications of the repository <br>
 * `pics`: folder containing the pictures used in the report <br>
-* `nltk_data`: folder containing the [NLTK])(https://www.nltk.org/) packages used in this project. To add in the `share` folder of the virtual environment <br>
+* `nltk_data`: folder containing the [NLTK](https://www.nltk.org/) packages used in this project. To add in the `share` folder of the virtual environment <br>
 * `requirements.txt`: collection of libraries used in the project <br>
 * `src/get_tweets.py`: module containing the function to read the tweet dataset or collect new tweets within a specified interval <br>
 * `src/params.py`: module containing the project parameters <br>
@@ -91,17 +91,14 @@ The repository is composed by: <br>
 ├── nltk_data
 │   ├── corpora
 │   │   ├── brown
-│   │   │   ├── CONTENTS
-│   │   │   ├── README
 │   │   │   └── ...
-|   |   |
-|   |   └── stopwords
-|   |       └── ...
+│   │   └── stopwords
+│   │       └── ...
 │   ├── stemmers
 │   │   ├── snowball_data
 │   │   │   └── ...
 │   └── tokenizers
-│       ├── punkt
+│       └── punkt
 ├── pics
 │   ├── lda_topics.png
 │   ├── main_centrality.png
