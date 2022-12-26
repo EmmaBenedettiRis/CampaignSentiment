@@ -9,12 +9,12 @@ from datetime import datetime as dt
 
 ############################################
 ############################################
-# Twitter credentials TO DELETE
-consumer_key= ""
-consumer_secret= ""
-access_token= ""
-access_token_secret= ""
-bearer_token= ""
+# Twitter credentials. REMEMBER TO DELETE THEM
+consumer_key= "your_consumer_key"
+consumer_secret= "your_consumer_secret"
+access_token= "your_access_token"
+access_token_secret= "your_access_token_secret"
+bearer_token= "your_bearer_token"
 ############################################
 ############################################
 
