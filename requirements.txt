@@ -38,7 +38,7 @@ jedi==0.18.1
 joblib==1.2.0
 jsonschema==4.9.1
 jupyter-client==7.3.4
-jupyter-core==4.11.1
+jupyter-core==4.11.2
 kiwisolver==1.4.4
 langdetect==1.0.9
 lxml==4.9.1
